@@ -9,32 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="compiled.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 p-8 font-montserrat">
+<body class="bg-shiraz-200 p-8 font-montserrat">
     <div class="container max-w-xl mx-auto p-5 bg-white shadow-lg rounded-lg">
         <h1 class="text-xl font-bold text-center mb-4">V60 Coffee to Water Ratio</h1>
         <div class="mb-4">
-            <label for="coffeeInput" class="block text-sm font-medium text-gray-700">Coffee in grams</label>
+            <label for="coffeeInput" class="block text-md font-bold text-gray-700">Coffee in grams</label>
             <input type="number" id="coffeeInput" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
         </div>
         <div class="mb-4">
-            <label for="waterInput" class="block text-sm font-medium text-gray-700">Water in grams</label>
+            <label for="waterInput" class="block text-md font-bold text-gray-700">Water in grams</label>
             <input type="number" id="waterInput" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
         </div>
         <div class="mb-8">
-            <label for="ratioSelect" class="block text-sm font-medium text-gray-700">Select Brew Strength</label>
+            <label for="ratioSelect" class="block text-md font-bold text-gray-700">Select Brew Strength</label>
             <select id="ratioSelect" class="block w-full mt-1 px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
                 <option value="15">Strong (1:15)</option>
                 <option value="16" selected>Normal (1:16)</option>
                 <option value="18">Light (1:18)</option>
             </select>
         </div>
+        <hr />
         <!-- Timer and control buttons -->
         <h2 class="text-center text-lg font-semibold mt-8 mb-4">Timer</h2> <!-- Subheader for the timer -->
 
         <div class="text-center">
             <div id="timerDisplay" class="m-2 py-4 text-4xl font-bold rounded-lg">04:00</div>
-            <button id="startTimer" class="px-4 py-2 border-2 outline-2 bg-yellow-300 shadow-inner rounded">Start Timer</button>
-            <button id="resetTimer" class="px-4 py-2 border-2 outline-2 bg-red-300 shadow-inner rounded hidden">Reset</button>
+            <button id="startTimer" class="px-4 py-2 border-3 outline-5 bg-shiraz-50 rounded">Start Timer</button>
+            <button id="resetTimer" class="px-4 py-2 border-3 outline-5 bg-shiraz-900 text-shiraz-50 rounded hidden">Reset</button>
         </div>
     </div>
     <script src="app.js"></script>
